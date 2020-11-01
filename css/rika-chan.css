@@ -1,0 +1,74 @@
+body {                                                                                                                                  
+    margin: 0;                                                      
+    background-color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;                  /*Isto serve para dizer o tipo de letra que quero, e depois se o usuario nao tiver aquele tipo de fonte instalado, o programa vai por a seguinte */
+    font-size: 18px;                                            /*Altera o tamanho da letra do que ta escrito nas listas*/
+    line-height: 22px;                                          /*Espaçamento entre linhas*/
+    } 
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 50px;                                          /*Padding é tipo um rebordo, um X de espaçamento*/
+    padding-bottom: 50px;
+       }
+
+header h1 {
+    color: blue;
+}
+
+header img {
+    border-radius: 170px;                                       /*Serve para dar recorte à imagem*/
+    width: 300px;                                               /*Largura*/
+    height: 300px;                                              /*Altura*/
+    object-fit: cover;                                          /*Basicamente "arranja" a imagem para nao ficar esticada, enquanto mantem se dentro dos pixeis que lhe demos*/
+    border: 10px solid #999999
+}
+
+h1, h2 {
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;                                             /*Serve para meter todo o txt ao longo do site alinhado ao centro*/ /*O 1º valor é topo e fundo, o 2º valor é esquerda e direita*/
+    padding: 0px 20px;                                          /*O 1º valor é topo e fundo, o 2º valor é esquerda e direita*/ /* Se tiver 4 valores ele faz no sentido dos ponteiros relogio aka top right bottom left*/
+}
+
+main img {                                                      /*Imagens que estao dentro do main*/
+    max-width: 100%;                                            /*Faz com que o tamanho maximo das imagens seja igual ao do seu "pai". por isso que se mete percentagem, pq assim fica smp alinhado ao tamanho max do texto*/
+}
+
+h2 {
+    font-size: 30px;
+    color: blue;
+}                                         
+
+p {                                                             /*Isto não afeta a font size das listas, mas altera o tamanho do texto geral (la deve ser alguma exlusao)*/ 
+    font-size: 16px;
+}
+
+a {                                                             /*Mudar a cor das ancoras aka link*/
+    color: blue;
+}
+
+a:hover {                                                        /*Pseudo-classe. o primeiro elemento, neste caso "a" é o sitio onde X acçao leva a X consequencia. Neste caso, a ação hover (aka passar o rato por cima muda de cor), sobre "a", faz com que as letras fiquem daquela cor aconteca.*/
+    color: red;
+    background-color: lightblue;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+}
+
+p footer {
+    margin: 0;
+}
+
+.caption {                                                       /*Isto é a tal classe no caption. O Ponto significa que todos os elementos com esta classe vao sofrer as alteraçoes que forem nomeadas a seguir*/
+    color: lightslategrey;
+    margin: 0px;                                                /* Margin serve para retirar a margem que está entre o que antecede, e whtvr a classe é. neste, caso reduz a distancia entre imagem e texto. */
+}
